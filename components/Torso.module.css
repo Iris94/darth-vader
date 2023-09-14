@@ -1,0 +1,30 @@
+.torso {
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+    clip-path: polygon(
+        30%         0%,
+        70%         0%,
+        100%        20%,
+        100%        100%,
+        0%          100%,
+        0%          20%
+    );
+}
+
+.torso-top {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(30, 29, 29);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.torso-top > div {
+    width: 5%;
+    height: 100%;
+    background-color: black;
+}
