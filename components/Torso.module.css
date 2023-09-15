@@ -28,3 +28,187 @@
     height: 100%;
     background-color: black;
 }
+
+.torso-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left-arm {
+    width: 15%;
+    height: 50%;
+    position: relative;
+    z-index: 5;
+    left: 5%;
+}
+
+.left-arm-shape {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    clip-path: polygon(
+        0%         0%,
+        100%       0%,
+        95%        10%,
+        90%        15%,
+        85%        100%,
+        15%        100%
+    );
+}
+
+.right-arm {
+    width: 40%;
+    height: 100%;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.armor {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.armor-shape {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(
+        0%      0%,
+        100%    0%,
+        95%     5%,
+        90%     100%,
+        10%     100%,
+        5%      5%  
+    );
+
+    background-color: black;
+}
+
+.armor-top {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+.armor-top-line {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.armor-above-cpu {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.armor-above-cpu > div {
+    width: 10%;
+    height: 100%;
+    background-color: gray;
+}
+
+.armor-cpu {
+    width: 90%;
+    height: 25%;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    flex-direction: column;
+}
+
+.armor-cpu-top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.armor-cpu-top-left,
+.armor-cpu-top-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.armor-cpu-top-left > div {
+    width: 80%;
+    height: 15%;
+    background-color: darkred;
+}
+
+.red {
+    width: 50%;
+    height: 25%;
+    background-color: red;
+}
+
+.green {
+    width: 50%;
+    height: 25%;
+    background-color: green;
+}
+
+.armor-cpu-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.armor-cpu-bottom > div:nth-child(1) {
+    width: 25%;
+    height: 90%;
+    background-color: rgb(27, 26, 26);
+}
+
+.armor-cpu-bottom > div {
+    width: 25%;
+    height: 90%;
+    background-color: rgb(130, 128, 128);
+}
+
+.armor-bellow-cpu {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.armor-bellow-cpu > div {
+    width: 10%;
+    height: 100%;
+    background-color: gray;
+}
+
+.armor-bottom {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    place-items: center;
+}
+
+.belt {
+    width: 100%;
+    height: 75%;
+    background-color: gray;
+}
+
+
+
