@@ -1,7 +1,6 @@
 .torso {
     width: 70%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
 
@@ -13,6 +12,7 @@
         0%          100%,
         0%          20%
     );
+    position: relative;
 }
 
 .torso-top {
@@ -61,12 +61,10 @@
 .right-arm {
     width: 40%;
     height: 100%;
-    border: 2px solid black;
     position: absolute;
-    z-index: 4;
+    z-index: 30;
     right: 0;
     top: 0;
-    visibility: hidden;
 }
 
 .armor {
@@ -88,7 +86,7 @@
         5%      5%  
     );
 
-    background-color: black;
+    background-color: rgb(181, 180, 180);
 }
 
 .armor-top {

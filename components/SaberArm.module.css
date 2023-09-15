@@ -1,0 +1,44 @@
+
+
+.right-arm-shape {
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+}
+
+.right-arm {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    clip-path: polygon(
+        10%        0%,
+        90%        0%,
+        95%        40%,
+        96%        41%,
+        97%        42%,
+        98%        43%,
+        99%        44%,
+        100%       45%,
+        75%        100%,
+        35%        100%,
+        25%        40%
+    );
+}
+
+.right-hand {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.lightsaber-box {
+    width: 40vmax;
+    height: 10vmin;
+    position: absolute;
+    border: 3px green solid;
+    transform: rotate(-15deg);
+    z-index: 50;
+}
