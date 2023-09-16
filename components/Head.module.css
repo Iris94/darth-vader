@@ -1,10 +1,13 @@
 .vaderMaskTop {
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
     width: 45%;
     height: 45%;
     display: flex;
+    box-shadow: 
+    inset -2px 0px 1px 0.2px rgb(92, 92, 92)
   }
   
   .vaderMaskTopL {
@@ -15,7 +18,9 @@
   .vaderMaskTopC {
     width: 10%;
     height: 100%;
-    border: solid 1px gray;
+    border-right: solid 1px rgb(1, 1, 1);
+    box-shadow: 
+    inset -2px 0px 1px 0.1px rgb(18, 18, 18)
   }
   
   .vaderMaskTopR {
@@ -30,7 +35,8 @@
   
   
   .vaderMaskBottom {
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
     width: 60%;
     height: 55%;
     
@@ -48,30 +54,47 @@
     margin: -10px
   }
   
-  .maskFullLeft,
+  .maskFullLeft {
+    width: 7%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
+    box-shadow: 
+    inset -1px 0px 1px 1px rgb(1, 1, 1),
+    inset -1px 0px 3px 1px rgb(2, 2, 2),
+    inset -1px 0px 10px 10px rgb(5, 5, 5),
+    inset -1px 0px 15px 20px rgb(10, 15, 20)
+  }
+
   .maskFullRight {
     width: 7%;
     height: 100%;
-    background-color: purple;
+    background: transparent;
+    box-shadow: 
+    inset -2px 0px 1px 0.2px rgb(92, 92, 92)
+    
   }
   
   .maskLeft,
   .maskRight {
     width: 12.5%;
     height: 95%;
-    background-color: brown;
+    background: transparent;
     align-self: flex-end;
     clip-path: polygon(
       50%     0%,
       100%    100%,
       0%      100%
     );
+    box-shadow: 
+    inset -2px 0px 1px 0.2px rgb(92, 92, 92)
   }
   
   .maskMain {
     width: 80%;
     height: 100%;
-    background-color: rgb(26, 25, 25);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
   
     clip-path: polygon(
       20%     0%,
@@ -97,9 +120,10 @@
   .left-eye {
     width: 45%;
     height: 100%;
-    background-color: red;
-    border: 3px solid red;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
     border-top-left-radius: 75%;
+    box-shadow: inset 2px 2px 2px rgb(3, 3, 3);
   }
   
   .between-eyes {
@@ -112,15 +136,17 @@
   .between-eyes > div {
     width: 90%;
     height: 100%;
-    outline: 1px solid gray;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
   }
   
   .right-eye {
     width: 45%;
     height: 100%;
-    background-color: red;
-    border: 3px solid red;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
     border-top-right-radius: 75%;
+    box-shadow: inset 1px 2px 5px rgb(10, 13, 13);
   }
   
   .nose {
@@ -134,7 +160,9 @@
     width: 10%;
     height: 100%;
     border-radius: 100%;
-    background-color: lightgray;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
+    box-shadow: inset 1px 1px rgb(15, 15, 15);
   }
   
   .mouth {
@@ -150,7 +178,8 @@
       100%    100%,
       0%      100%
     );
-    background-color: darkgrey;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
     display: flex;
     flex-direction: column;
   }
@@ -161,13 +190,15 @@
     display: flex;
     justify-content: center;
     gap: 1vmin;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 75%, rgba(19,19,19,1) 100%);
   }
   
   .mouth-top > div {
     width: 5%;
     height: 100%;
-    background-color: rgb(41, 38, 38);
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(19,19,19,1) 100%);
   }
   
   .mouth-bottom {

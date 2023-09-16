@@ -3,13 +3,14 @@
 .right-arm-shape {
     width: 50%;
     height: 100%;
-    overflow: visible;
+    position: relative;
 }
 
 .right-arm {
     width: 100%;
     height: 80%;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(262deg, rgba(0,0,0,1) 44%, rgba(23,23,23,1) 100%);
     clip-path: polygon(
         10%        0%,
         90%        0%,
@@ -23,22 +24,56 @@
         35%        100%,
         25%        40%
     );
-}
-
-.right-hand {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
 }
 
-.lightsaber-box {
-    width: 40vmax;
-    height: 10vmin;
+.right-hand {
+    width: 500%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     position: absolute;
-    border: 3px green solid;
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
+    right: 0;
+    bottom: 5
+}
+
+.lightsaber {
+    width: 87%;
+    height: 30%;
+    position: relative;
+    background-color: white;
+    box-shadow: 
+    0 0 1px red,
+    0 0 2px red,
+    0 0 3px red,
+    0 0 5px red,
+    0 0 7px red,
+    0 0 12px red,
+    0 0 15px red,
+    0 0 25px red,
+    0 0 30px red,
+    0 0 45px red,
+    0 0 50px red,
+    0 0 70px red;
     z-index: 50;
+    border-radius: 15% 0 0 15%;
+}
+
+.hand {
+    width: 8%;
+    height: 80%;
+    align-self: flex-start;
+    background: rgb(0,0,0);
+    background: linear-gradient(262deg, rgba(0,0,0,1) 44%, rgba(23,23,23,1) 100%);
+    transform: rotate(10deg);
+}
+
+.saber-end {
+    width: 5%;
+    height: 30%;
+    background-color: black;
+    position: relative;
+    right: 0.2%
 }

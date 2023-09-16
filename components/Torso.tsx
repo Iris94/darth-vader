@@ -4,7 +4,7 @@ import { SaberArm } from '.'
 export default function Torso () {
     return (
         <div className="w-full h-full flex flex-col items-center justify-start">
-            <div className="lg:w-2/5 w-full h-4/5 flex flex-col items-center relative bottom-5 z-1">
+            <div className="lg:w-1/2 w-full h-4/5 flex flex-col items-center relative bottom-5">
                 <div className={styles["torso"]}>
                   <div className={styles['torso-top']}>
                         <div></div>

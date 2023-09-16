@@ -13,20 +13,26 @@
         0%          20%
     );
     position: relative;
+    overflow: visible
 }
 
 .torso-top {
     width: 100%;
     height: 20%;
-    background-color: rgb(30, 29, 29);
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
     display: flex;
     justify-content: space-evenly;
+    box-shadow: inset -3px 0px 5px gray,
+    -5px 0px 2px 2px gray
 }
 
 .torso-top > div {
     width: 5%;
     height: 100%;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(119deg, rgba(0,0,0,1) 82%, rgba(32,32,32,1) 100%);
+    opacity: 0.6;
 }
 
 .torso-bottom {
@@ -47,7 +53,8 @@
 .left-arm-shape {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(94deg, rgba(0,0,0,1) 51%, rgba(32,32,32,1) 100%);
     clip-path: polygon(
         0%         0%,
         100%       0%,
@@ -62,9 +69,10 @@
     width: 40%;
     height: 100%;
     position: absolute;
-    z-index: 30;
-    right: 0;
+    z-index: 10;
+    right: 50vmax;
     top: 0;
+    right: 0;
 }
 
 .armor {
@@ -86,7 +94,8 @@
         5%      5%  
     );
 
-    background-color: rgb(181, 180, 180);
+    background: rgb(0,0,0);
+    background: linear-gradient(94deg, rgba(0,0,0,1) 29%, rgba(29,29,29,1) 100%);
 }
 
 .armor-top {
@@ -99,7 +108,8 @@
 .armor-top-line {
     width: 30%;
     height: 100%;
-    background-color: rgb(19, 19, 19);
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,13 +126,15 @@
 .armor-above-cpu > div {
     width: 10%;
     height: 100%;
-    background-color: gray;
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
 }
 
 .armor-cpu {
     width: 90%;
     height: 25%;
-    background-color: rgb(55, 55, 55);
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
     display: flex;
     flex-direction: column;
 }
@@ -146,19 +158,40 @@
 .armor-cpu-top-left > div {
     width: 80%;
     height: 15%;
-    background-color: darkred;
+    background-color: white;
+    box-shadow: 
+    0 0 1px red,
+    0 0 2px red,
+    0 0 3px red,
+    0 0 5px red,
+    0 0 7px red,
+    0 0 12px red;
 }
 
 .red {
     width: 50%;
     height: 25%;
-    background-color: red;
+    background-color: white;
+    box-shadow: 
+    0 0 1px red,
+    0 0 2px red,
+    0 0 3px red,
+    0 0 5px red,
+    0 0 7px red,
+    0 0 12px red;
 }
 
 .green {
     width: 50%;
     height: 25%;
-    background-color: green;
+    background-color: white;
+    box-shadow: 
+    0 0 1px green,
+    0 0 2px lightgreen,
+    0 0 3px lightgreen,
+    0 0 5px green,
+    0 0 7px lightgreen,
+    0 0 12px lightgoldenrodyellow;
 }
 
 .armor-cpu-bottom {
@@ -173,13 +206,15 @@
 .armor-cpu-bottom > div:nth-child(1) {
     width: 25%;
     height: 90%;
-    background-color: rgb(27, 26, 26);
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
 }
 
 .armor-cpu-bottom > div {
     width: 25%;
     height: 90%;
-    background-color: rgb(130, 128, 128);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 44%, rgba(76,76,76,1) 100%);
 }
 
 .armor-bellow-cpu {
@@ -192,7 +227,8 @@
 .armor-bellow-cpu > div {
     width: 10%;
     height: 100%;
-    background-color: gray;
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
 }
 
 .armor-bottom {
@@ -205,7 +241,8 @@
 .belt {
     width: 100%;
     height: 75%;
-    background-color: gray;
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 45%, rgba(32,32,32,1) 100%);
 }
 
 
