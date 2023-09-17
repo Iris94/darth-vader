@@ -43,24 +43,45 @@
     width: 87%;
     height: 30%;
     position: relative;
-    background-color: white;
-    box-shadow: 
-    0 0 1px red,
-    0 0 2px red,
-    0 0 3px red,
-    0 0 5px red,
-    0 0 7px red,
-    0 0 12px red,
-    0 0 15px red,
-    0 0 25px red,
-    0 0 30px red,
-    0 0 45px red,
-    0 0 50px red,
-    0 0 70px red,
-    0 0 80px red;
+    background-color: transparent;
     z-index: 50;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.lightsaber-red {
+    width: 0%;
+    height: 30%;
+    position: relative;
+    background-color: transparent;
+    z-index: 50;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation: saberGlow 2s ease-out forwards
+}
+
+@keyframes saberGlow {
+    from {
+        background-color: transparent;
+        width: 0%;
+    } to {
+        width: 87%;
+        background-color: white;
+        box-shadow: 
+        0 0 1px red,
+        0 0 2px red,
+        0 0 3px red,
+        0 0 5px red,
+        0 0 7px red,
+        0 0 12px red,
+        0 0 15px red,
+        0 0 25px red,
+        0 0 30px red,
+        0 0 45px red,
+        0 0 50px red,
+        0 0 70px red,
+        0 0 80px red;
+    }
 }
 
 .hand {

@@ -1,6 +1,6 @@
 import styles from './Head.module.css'
 
-export default function Head () {
+export default function Head ( {turnOn} : any ) {
     return (
         <div className="w-full h-1/3 flex flex-col items-center justify-end z-10">
             <div className="lg:w-1/5 w-2/5 h-2/3 flex flex-col items-center">
@@ -15,7 +15,7 @@ export default function Head () {
                     <div className={styles["maskLeft"]}></div>
                     <div className={styles["maskMain"]}>
                         <div className={styles["eyes"]}>
-                            <div className={styles["left-eye"]}></div>
+                            <div className={turnOn ? styles["left-eye-red"] : styles["left-eye"]}></div>
                             <div className={styles["between-eyes"]}>
                                 <div></div>
                                 <div></div>
@@ -25,7 +25,7 @@ export default function Head () {
                                 <div></div>
                                 <div></div>
                             </div>
-                            <div className={styles["right-eye"]}></div>
+                            <div className={turnOn ? styles["right-eye-red"] : styles["right-eye"]}></div>
                         </div>
                         <div className={styles["nose"]}>
                             <div className={styles["nose-dot"]}></div>

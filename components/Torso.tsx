@@ -1,7 +1,7 @@
 import styles from './Torso.module.css'
 import { SaberArm } from '.'
 
-export default function Torso () {
+export default function Torso ( {turnOn} : any) {
     return (
         <div className="w-full h-2/3 flex flex-col items-center justify-start">
             <div className="lg:w-1/2 w-full h-4/5 flex flex-col items-center relative bottom-5">
@@ -61,7 +61,7 @@ export default function Torso () {
                         </div>
                     </div>
                     <div className={styles['right-arm']}>
-                        {<SaberArm />}
+                        {<SaberArm turnOn={turnOn}/>}
                     </div> 
                   </div>
                 </div>
